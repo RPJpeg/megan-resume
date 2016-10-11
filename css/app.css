@@ -1,3 +1,93 @@
+body, h1, h2, h3, h4, h5, p, li, a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 100; }
 
+p {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif; }
+
+h1 {
+  font-size: 48px;
+  font-size: 3rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500; }
+
+h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300; }
+
+h3 {
+  font-size: 32px;
+  font-size: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300; }
+
+h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-family: "Roboto Condensed", sans-serif; }
+
+h5 {
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif; }
+
+li {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif; }
+
+a {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif; }
+
+.italics {
+  font-style: italic; }
+
+a {
+  color: #EFEFEF;
+  text-decoration: underline; }
+  a:hover {
+    color: #00BD9C;
+    text-decoration: none; }
+
+header {
+  background-color: #1B1D1F;
+  height: 200px;
+  color: #EFEFEF;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.skills {
+  background-color: #B37ACE;
+  height: 200px;
+  color: #EFEFEF;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.experience {
+  background-color: #00BD9C;
+  height: 200px;
+  color: #1B1D1F;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+footer {
+  background-color: #4F4F4F;
+  height: 200px;
+  color: #EFEFEF;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 /*# sourceMappingURL=app.css.map */
