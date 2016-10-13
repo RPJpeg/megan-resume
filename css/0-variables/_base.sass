@@ -1,26 +1,42 @@
-body, h1, h2, h3, h4, h5, p, li, a
+body, h1, h2, h3, h4, h5, p, li, a, div
   +no-padding
   +no-margin
   text-decoration: none
   letter-spacing: 1px
   font-weight: 100
+  box-sizing: border-box
+
+body
+  background-image: url('../images/new_year_background.png')
+  background-repeat: repeat
+  background-color: $my-white
+
+.wrapper
+  width: 95%
+  max-width: 1200px
+  +center-block
+  box-shadow: 1px 1px 10px $my-light-grey
+  @include bp-medium
+    width: 100%
+    margin: 0
+
 
 p
   @include font-size(12px)
   font-family: 'Roboto', sans-serif
 
 h1
-  @include font-size(48px)
+  @include font-size(52px)
   font-family: 'Roboto Slab', serif
   font-weight: 500
 
 h2
-  @include font-size(36px)
+  @include font-size(32px)
   font-family: 'Roboto Slab', serif
   font-weight: 300
 
 h3
-  @include font-size(32px)
+  @include font-size(28px)
   font-family: 'Roboto Condensed', sans-serif
   font-weight: 300
 
