@@ -5,6 +5,7 @@ body, h1, h2, h3, h4, h5, p, li, a, div
   letter-spacing: 1px
   font-weight: 100
   box-sizing: border-box
+  +transition
 
 body
   background-image: url('../images/new_year_background.png')
@@ -61,8 +62,9 @@ a
   font-style: italic
 
 a
-  color: $my-light
-  text-decoration: underline
+  color: $highlight
+  text-decoration: none
   &:hover
     color: $super-highlight
     text-decoration: none
+    +transition

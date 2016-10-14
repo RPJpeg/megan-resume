@@ -1,7 +1,57 @@
 .experience
-  background-color: $super-highlight
-  height: 200px
-  color: $my-black
-  display: flex
-  align-items: center
-  justify-content: center
+  height: 400px
+  @include clearfix
+  .selector-box
+    width: 35%
+    height: 100%
+    background-color: $my-light-grey
+    float: left
+    p, ul, li, h3
+      color: $my-white
+    span li
+      list-style: none
+      font-style: italic
+      color: $dark-white
+      padding: 5px 0
+    h3
+      text-align: left
+      padding: 30px
+    color: $my-light
+    .exp-left
+      @include font-size(128px)
+      width: 15%
+      padding: 15px
+      float: left
+      opacity: 0.25
+    .exp-right
+      padding: 15px
+      padding-left: 15%
+  .summary-box
+    width: 65%
+    height: 100%
+    float: left
+    background-color: $my-light
+    position: relative
+    .licensing
+      background-color: $my-black
+      height: 100%
+      width: 100%
+      position: absolute
+    .content
+      background-color: green
+      height: 100%
+      width: 100%
+      position: absolute
+    .pro-specialist
+      background-color: $highlight
+      height: 100%
+      width: 100%
+      position: absolute
+    .pro-services
+      background-color: $super-highlight
+      height: 100%
+      width: 100%
+      position: absolute
+
+.hidden
+  display: none
