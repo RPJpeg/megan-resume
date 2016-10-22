@@ -57,6 +57,8 @@ li
 a
   @include font-size(12px)
   font-family: 'Roboto', sans-serif
+  +transition
+  cursor: pointer
 
 .italics
   font-style: italic
@@ -68,3 +70,9 @@ a
     color: $super-highlight
     text-decoration: none
     +transition
+
+.hidden
+  display: none
+
+.unhidden
+  display: block

@@ -4,7 +4,7 @@
   .selector-box
     width: 35%
     height: 100%
-    background-color: $my-light-grey
+    background-color: $my-grey
     float: left
     p, ul, li, h3
       color: $my-white
@@ -15,43 +15,49 @@
       padding: 5px 0
     h3
       text-align: left
-      padding: 30px
-    color: $my-light
+      padding: 30px 30px 15px 30px
+      color: $my-light
     .exp-left
       @include font-size(128px)
       width: 15%
-      padding: 15px
+      padding: 40px 15px 15px 15px
       float: left
       opacity: 0.25
     .exp-right
-      padding: 15px
+      padding: 0 15px 15px 15px
       padding-left: 15%
+      i
+        transform: translate(5px, 4px)
+        padding: 1px
+    a
+      cursor: pointer
+      &:hover
+        color: $my-white
+        padding-left: 3px
+    p
+      color: $highlight
+      margin-left: 38px
+
   .summary-box
     width: 65%
     height: 100%
     float: left
     background-color: $my-light
-    position: relative
-    .licensing
-      background-color: $my-black
-      height: 100%
-      width: 100%
-      position: absolute
-    .content
-      background-color: green
-      height: 100%
-      width: 100%
-      position: absolute
-    .pro-specialist
-      background-color: $highlight
-      height: 100%
-      width: 100%
-      position: absolute
-    .pro-services
-      background-color: $super-highlight
-      height: 100%
-      width: 100%
-      position: absolute
 
-.hidden
-  display: none
+  .licensing
+    background-color: $highlight
+    width: 100%
+    height: 100%
+
+  .content
+    background-color: $my-black
+
+  .specialist
+    background-color: $dark-white
+    width: 100%
+    height: 100%
+
+  .services
+    background-color: $my-white
+    width: 100%
+    height: 100%

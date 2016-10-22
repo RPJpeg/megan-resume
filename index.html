@@ -40,7 +40,7 @@
             <div class="skills-col-1">
               <h4>Qualifications</h4>
               <p>Tailoring presentation materials, cxcellent problem solving, great with time managment, efficient presentation skills.</p>
-              <a href="#"><div class="details-button">More Details</div></a>
+              <a href="#" id="#qualifications"><div class="details-button">More Details</div></a>
             </div>
             <div class="skills-pre-2">
               <i class="fa fa-trophy fa-2x" aria-hidden="true"></i>
@@ -48,7 +48,7 @@
             <div class="skills-col-2">
               <h4>Accomplishments</h4>
               <p>Advised over 700 licensing partners. Acquired new licensing partners.  Decreased royalties paid. Developed guidelines and Metrics.</p>
-              <a href="#"><div class="details-button">More Details</div></a>
+              <a href="#" id="#accomplishments"><div class="details-button">More Details</div></a>
             </div>
             <div class="skills-pre-3">
               <i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i>
@@ -56,7 +56,7 @@
             <div class="skills-col-3">
               <h4>Highlights</h4>
               <p>Received Bachelor of Arts in Dance from James Madison University. Danced and Choreographed Dance routines.</p>
-              <a href="#"><div class="details-button">More Details</div></a>
+              <a href="#" id="#highlights"><div class="details-button">More Details</div></a>
             </div>
           </div>
         </div>
@@ -82,21 +82,35 @@
           <div class="exp-left">}</div>
           <div class="exp-right">
             <ul>
-              <li>Licensing Coordinator</li>
+              <li>Licensing Coordinator <a href="#" id="licensing"><i class="fa fa-arrow-circle-o-right fa-2x" aria-hidden="true"></i></a></li>
               <span><li>CustomInk Inc</li></span>
-              <li>Content Associate</li>
+              <li>Content Associate <a href="#" id="content"><i class="fa fa-arrow-circle-o-right fa-2x" aria-hidden="true"></i></a></li>
               <span><li>CustomInk Inc</li></span>
-              <li>Program Specialist</li>
-              <span><li>Girl Scot Council of the Nation's Capital</li></span>
-              <li>Program Services</li>
-              <span><li>Girl Scot Council of the Nation's Capital</li></span>
+              <li>Program Specialist <a href="#" id="specialist"><i class="fa fa-arrow-circle-o-right fa-2x" aria-hidden="true"></i></a></li>
+              <span><li>Girl Scout Council of the Nation's Capital</li></span>
+              <li>Program Services <a href="#" id="services"><i class="fa fa-arrow-circle-o-right fa-2x" aria-hidden="true"></i></a></li>
+              <span><li>Girl Scout Council of the Nation's Capital</li></span>
+            </ul>
+            <p>click above for more information</p>
           </div>
         </div>
         <div class="summary-box">
-          <div class="licensing hidden"></div>
-          <div class="content hidden"></div>
-          <div class="pro-specialist hidden"></div>
-          <div class="pro-services hidden"></div>
+          <div class="licensing" id="licensing-box">
+            <h3>Licensing Coordinator</h3>
+            <p>Licensing Coordinator Information</p>
+          </div>
+          <div class="hidden" id="content-box">
+            <h3>Content Associate</h3>
+            <p>Content Associate Information</p>
+          </div>
+          <div class="specialist hidden" id="specialist-box">
+            <h3>Program Specialist</h3>
+            <p>Program Specialist Information</p>
+          </div>
+          <div class="services hidden" id="services-box">
+            <h3>Program Services</h3>
+            <p>Program Services Information</p>
+          </div>
         </div>
       </div>
     </main>
@@ -105,6 +119,20 @@
     </footer>
   </div>
 
+<!-- MODALS -->
+<div class="darken hidden"></div>
+<div class="qualifications-modal modal hidden" id="qualifications-modal">
+  <h3>Qualifications</h3>
+</div>
+<div class="accomplishments-modal modal hidden" id="accomplishments-modal">
+  <h3>Accomplishments</h3>
+</div>
+<div class="highlights-modal modal hidden" id="highlights-modal">
+  <h3>Highlights</h3>
+</div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/home.js"></script>
 </body>
 </html>
