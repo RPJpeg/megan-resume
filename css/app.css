@@ -111,7 +111,27 @@ header {
     background-image: url("../images/megan.jpg");
     background-position: center;
     background-size: cover;
-    float: left; }
+    float: left;
+    position: relative; }
+    header .photo-box .objective-box {
+      position: absolute;
+      left: 0;
+      top: 25%;
+      opacity: 0; }
+      header .photo-box .objective-box:hover {
+        opacity: 1;
+        -webkit-transition: 0.2s ease;
+        -moz-transition: 0.2s ease;
+        -ms-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        transition: 0.2s ease; }
+      header .photo-box .objective-box p {
+        background-color: rgba(255, 255, 255, 0.85);
+        color: #555;
+        max-width: 500px;
+        padding: 20px;
+        font-size: 14px;
+        font-size: 0.875rem; }
   header .content-box {
     height: 100%;
     width: 65%;
@@ -395,27 +415,36 @@ header {
         color: #f7f7f7;
         padding-left: 3px; }
     .experience .selector-box p {
-      color: #ff9500;
+      color: #f7f7f7;
       margin-left: 38px; }
   .experience .summary-box {
     width: 65%;
     height: 100%;
-    float: left;
-    background-color: #C4C4C4; }
-  .experience .licensing {
-    background-color: #ff9500;
-    width: 100%;
-    height: 100%; }
-  .experience .content {
-    background-color: #333; }
-  .experience .specialist {
-    background-color: #aaa;
-    width: 100%;
-    height: 100%; }
-  .experience .services {
     background-color: #f7f7f7;
+    display: flex;
+    margin: 0; }
+  .experience .licensing, .experience .content, .experience .specialist, .experience .services {
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
     width: 100%;
-    height: 100%; }
+    padding: 30px;
+    box-shadow: 2px 2px 10px #666;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px; }
+    .experience .licensing h3, .experience .content h3, .experience .specialist h3, .experience .services h3 {
+      color: #f75d0f;
+      padding-bottom: 3px; }
+      .experience .licensing h3:hover, .experience .content h3:hover, .experience .specialist h3:hover, .experience .services h3:hover {
+        transform: translateY(-5px); }
+    .experience .licensing h4, .experience .content h4, .experience .specialist h4, .experience .services h4 {
+      color: #C4C4C4; }
+    .experience .licensing li, .experience .content li, .experience .specialist li, .experience .services li {
+      padding: 4px; }
+      .experience .licensing li:hover, .experience .content li:hover, .experience .specialist li:hover, .experience .services li:hover {
+        color: #ff9500; }
 
 footer {
   background-color: #333;
@@ -423,7 +452,8 @@ footer {
   color: #C4C4C4;
   margin: 0;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 30px; }
   footer:after {
     content: "";
     display: table;
@@ -434,7 +464,7 @@ footer {
     padding: 15px; }
 
 .darken {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -443,20 +473,28 @@ footer {
   z-index: 999; }
 
 .modal {
-  width: 560px;
-  min-height: 70vh;
+  width: 800px;
   background-color: #f7f7f7;
   padding: 30px;
   position: fixed;
   top: 10vh;
-  left: calc(50% - 280px);
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  border-radius: 12px;
+  left: calc(50% - 400px);
   -webkit-box-shadow: 1px 1px 1px 0 #666;
   -moz-box-shadow: 1px 1px 1px 0 #666;
   box-shadow: 1px 1px 1px 0 #666;
   z-index: 1000; }
+
+.modal h3, .darken h3 {
+  color: #f75d0f; }
+.modal .header-list, .darken .header-list {
+  border-top: solid #C4C4C4 2pt;
+  padding-top: 25px; }
+.modal li, .darken li {
+  color: #666;
+  padding: 3px;
+  font-size: 16px;
+  font-size: 1rem; }
+  .modal li strong, .darken li strong {
+    color: #333; }
 
 /*# sourceMappingURL=app.css.map */

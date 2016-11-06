@@ -32,4 +32,38 @@ $(document).ready(function() {
       e.preventDefault();
   });
 
+  $("#qualifications").click(function(e) {
+    $("#overlay").fadeTo(300,1)
+    $("#qualifications-modal").fadeTo(300,1)
+    e.preventDefault();
+  });
+
+  $("#accomplishments").click(function(e) {
+    $("#overlay").fadeTo(300,1)
+    $("#accomplishments-modal").fadeTo(300,1)
+    e.preventDefault();
+  });
+
+  $("#highlights").click(function(e) {
+    $("#overlay").fadeTo(300,1)
+    $("#highlights-modal").fadeTo(300,1)
+    e.preventDefault();
+  });
+
+  $("#overlay").click(function(e) {
+    $("#overlay").delay(300).css("display", "none");
+    $("#qualifications-modal").delay(300).css("display", "none");
+    $("#accomplishments-modal").delay(300).css("display", "none");
+    $("#highlights-modal").delay(300).css("display", "none");
+    e.preventDefault();
+  });
+
+  $("closeit").click(function(e) {
+    $("#overlay").delay(300).css("display", "none");
+    $("#qualifications-modal").delay(300).css("display", "none");
+    $("#accomplishments-modal").delay(300).css("display", "none");
+    $("#highlights-modal").delay(300).css("display", "none");
+    e.preventDefault();
+  });
+
 });
