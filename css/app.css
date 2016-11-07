@@ -22,6 +22,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 1px 1px 10px #666; }
+  @media only screen and (max-width: 60em) {
+    .wrapper {
+      width: 100%;
+      margin: 0; } }
   @media only screen and (max-width: 40em) {
     .wrapper {
       width: 100%;
@@ -31,39 +35,95 @@ p {
   font-size: 12px;
   font-size: 0.75rem;
   font-family: "Roboto", sans-serif; }
+  @media only screen and (max-width: 60em) {
+    p {
+      font-size: 10px;
+      font-size: 0.625rem; } }
+  @media only screen and (max-width: 40em) {
+    p {
+      font-size: 8px;
+      font-size: 0.5rem; } }
 
 h1 {
   font-size: 52px;
   font-size: 3.25rem;
   font-family: "Roboto Slab", serif;
   font-weight: 500; }
+  @media only screen and (max-width: 60em) {
+    h1 {
+      font-size: 32px;
+      font-size: 2rem; } }
+  @media only screen and (max-width: 40em) {
+    h1 {
+      font-size: 32px;
+      font-size: 2rem; } }
 
 h2 {
   font-size: 32px;
   font-size: 2rem;
   font-family: "Roboto Slab", serif;
   font-weight: 300; }
+  @media only screen and (max-width: 60em) {
+    h2 {
+      font-size: 24px;
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 40em) {
+    h2 {
+      font-size: 24px;
+      font-size: 1.5rem; } }
 
 h3 {
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300; }
+  @media only screen and (max-width: 60em) {
+    h3 {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media only screen and (max-width: 40em) {
+    h3 {
+      font-size: 18px;
+      font-size: 1.125rem; } }
 
 h4 {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
   font-family: "Roboto Condensed", sans-serif; }
+  @media only screen and (max-width: 60em) {
+    h4 {
+      font-size: 14px;
+      font-size: 0.875rem; } }
+  @media only screen and (max-width: 40em) {
+    h4 {
+      font-size: 14px;
+      font-size: 0.875rem; } }
 
 h5 {
   font-size: 16px;
   font-size: 1rem;
   font-family: "Roboto", sans-serif; }
+  @media only screen and (max-width: 60em) {
+    h5 {
+      font-size: 12px;
+      font-size: 0.75rem; } }
+  @media only screen and (max-width: 40em) {
+    h5 {
+      font-size: 12px;
+      font-size: 0.75rem; } }
 
 li {
   font-size: 12px;
   font-size: 0.75rem;
   font-family: "Roboto", sans-serif; }
+  @media only screen and (max-width: 60em) {
+    li {
+      font-size: 10px;
+      font-size: 0.625rem; } }
+  @media only screen and (max-width: 40em) {
+    li {
+      font-size: 10px;
+      font-size: 0.625rem; } }
 
 a {
   font-size: 12px;
@@ -75,6 +135,14 @@ a {
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
   cursor: pointer; }
+  @media only screen and (max-width: 60em) {
+    a {
+      font-size: 10px;
+      font-size: 0.625rem; } }
+  @media only screen and (max-width: 40em) {
+    a {
+      font-size: 10px;
+      font-size: 0.625rem; } }
 
 .italics {
   font-style: italic; }
@@ -113,11 +181,24 @@ header {
     background-size: cover;
     float: left;
     position: relative; }
+    @media only screen and (max-width: 60em) {
+      header .photo-box {
+        width: 40%; } }
+    @media only screen and (max-width: 40em) {
+      header .photo-box {
+        width: 100%;
+        float: none; } }
     header .photo-box .objective-box {
       position: absolute;
       left: 0;
-      top: 25%;
+      top: 15%;
       opacity: 0; }
+      @media only screen and (max-width: 60em) {
+        header .photo-box .objective-box {
+          top: 20%; } }
+      @media only screen and (max-width: 40em) {
+        header .photo-box .objective-box {
+          top: 25%; } }
       header .photo-box .objective-box:hover {
         opacity: 1;
         -webkit-transition: 0.2s ease;
@@ -136,6 +217,12 @@ header {
     height: 100%;
     width: 65%;
     float: right; }
+    @media only screen and (max-width: 60em) {
+      header .content-box {
+        width: 60%; } }
+    @media only screen and (max-width: 40em) {
+      header .content-box {
+        width: 100%; } }
     header .content-box .top-content {
       width: 100%;
       height: 50%; }
@@ -170,6 +257,12 @@ header {
           -ms-transition: 0.2s ease;
           -o-transition: 0.2s ease;
           transition: 0.2s ease; }
+        header .content-box .top-content .pdf-box img {
+          width: 70px;
+          height: auto; }
+          @media only screen and (max-width: 60em) {
+            header .content-box .top-content .pdf-box img {
+              width: 40px; } }
     header .content-box .bottom-content {
       width: 100%;
       height: 50%;
@@ -204,20 +297,22 @@ header {
         header .content-box .bottom-content .linkedin-box img {
           width: 70px;
           height: auto; }
+          @media only screen and (max-width: 60em) {
+            header .content-box .bottom-content .linkedin-box img {
+              width: 40px; } }
 
 .skills {
   background-color: #f7f7f7;
   color: #333;
-  height: 350px; }
-  .skills:after {
-    content: "";
-    display: table;
-    clear: both; }
+  height: 450px; }
   .skills .skills-box {
     height: 100%;
     width: 65%;
     float: left; }
-    @media only screen and (max-width: 30em) {
+    @media only screen and (max-width: 60em) {
+      .skills .skills-box {
+        width: 100%; } }
+    @media only screen and (max-width: 40em) {
       .skills .skills-box {
         width: 100%; } }
     .skills .skills-box .skills-box-top {
@@ -227,6 +322,9 @@ header {
       align-items: center;
       justify-content: center;
       flex-direction: column; }
+      @media only screen and (max-width: 40em) {
+        .skills .skills-box .skills-box-top {
+          height: 20%; } }
       .skills .skills-box .skills-box-top h3 {
         color: #4F4F4F; }
       .skills .skills-box .skills-box-top p {
@@ -267,6 +365,9 @@ header {
           -ms-transition: 0.2s ease;
           -o-transition: 0.2s ease;
           transition: 0.2s ease; }
+        @media only screen and (max-width: 40em) {
+          .skills .skills-box .skills-box-bottom .fa {
+            padding-right: 20px; } }
       .skills .skills-box .skills-box-bottom img {
         width: 100%;
         height: auto;
@@ -280,12 +381,22 @@ header {
         height: 100%;
         width: 8.33%;
         float: left; }
+        @media only screen and (max-width: 40em) {
+          .skills .skills-box .skills-box-bottom .skills-pre-1 {
+            float: none;
+            width: 100%;
+            height: 0; } }
       .skills .skills-box .skills-box-bottom .skills-col-1 {
         height: 100%;
         width: 25%;
         float: left;
         background-color: #f7f7f7;
         padding: 10px; }
+        @media only screen and (max-width: 40em) {
+          .skills .skills-box .skills-box-bottom .skills-col-1 {
+            float: none;
+            width: 100%;
+            height: 190px; } }
         .skills .skills-box .skills-box-bottom .skills-col-1 h4 {
           color: #f75d0f; }
         .skills .skills-box .skills-box-bottom .skills-col-1 h4, .skills .skills-box .skills-box-bottom .skills-col-1 p {
@@ -299,12 +410,22 @@ header {
         height: 100%;
         width: 8.33%;
         float: left; }
+        @media only screen and (max-width: 40em) {
+          .skills .skills-box .skills-box-bottom .skills-pre-2 {
+            float: none;
+            width: 100%;
+            height: 0; } }
       .skills .skills-box .skills-box-bottom .skills-col-2 {
         height: 100%;
         width: 25%;
         float: left;
         background-color: #f7f7f7;
         padding: 10px; }
+        @media only screen and (max-width: 40em) {
+          .skills .skills-box .skills-box-bottom .skills-col-2 {
+            float: none;
+            width: 100%;
+            height: 190px; } }
         .skills .skills-box .skills-box-bottom .skills-col-2 h4 {
           color: #f75d0f; }
         .skills .skills-box .skills-box-bottom .skills-col-2 h4, .skills .skills-box .skills-box-bottom .skills-col-2 p {
@@ -317,12 +438,22 @@ header {
         height: 100%;
         width: 8.33%;
         float: left; }
+        @media only screen and (max-width: 40em) {
+          .skills .skills-box .skills-box-bottom .skills-pre-3 {
+            float: none;
+            width: 100%;
+            height: 0; } }
       .skills .skills-box .skills-box-bottom .skills-col-3 {
         height: 100%;
         width: 25%;
         float: left;
         background-color: #f7f7f7;
         padding: 10px; }
+        @media only screen and (max-width: 40em) {
+          .skills .skills-box .skills-box-bottom .skills-col-3 {
+            float: none;
+            width: 100%;
+            height: 190px; } }
         .skills .skills-box .skills-box-bottom .skills-col-3 h4 {
           color: #f75d0f; }
         .skills .skills-box .skills-box-bottom .skills-col-3 h4, .skills .skills-box .skills-box-bottom .skills-col-3 p {
@@ -348,6 +479,15 @@ header {
       content: "";
       display: table;
       clear: both; }
+    @media only screen and (max-width: 60em) {
+      .skills .info-box {
+        width: 100%;
+        padding-top: 60px; } }
+    @media only screen and (max-width: 40em) {
+      .skills .info-box {
+        width: 100%;
+        padding-top: 50px;
+        margin-top: 200px; } }
     .skills .info-box .personal-info-left {
       width: 35%;
       height: auto;
@@ -375,16 +515,36 @@ header {
         overflow: hidden; }
 
 .experience {
-  height: 400px; }
+  height: 460px; }
   .experience:after {
     content: "";
     display: table;
     clear: both; }
+  @media only screen and (max-width: 60em) {
+    .experience {
+      width: 100%;
+      height: 400px;
+      float: none;
+      margin-top: 400px; } }
+  @media only screen and (max-width: 40em) {
+    .experience {
+      width: 100%;
+      height: 400px;
+      float: none;
+      margin-top: 1000px; } }
   .experience .selector-box {
     width: 35%;
     height: 100%;
     background-color: #555;
     float: left; }
+    @media only screen and (max-width: 60em) {
+      .experience .selector-box {
+        float: none;
+        width: 100%; } }
+    @media only screen and (max-width: 40em) {
+      .experience .selector-box {
+        float: none;
+        width: 100%; } }
     .experience .selector-box p, .experience .selector-box ul, .experience .selector-box li, .experience .selector-box h3 {
       color: #f7f7f7; }
     .experience .selector-box span li {
@@ -396,6 +556,14 @@ header {
       text-align: left;
       padding: 30px 30px 15px 30px;
       color: #C4C4C4; }
+      @media only screen and (max-width: 60em) {
+        .experience .selector-box h3 {
+          text-align: center;
+          padding-top: 85px; } }
+      @media only screen and (max-width: 40em) {
+        .experience .selector-box h3 {
+          text-align: center;
+          padding-top: 72px; } }
     .experience .selector-box .exp-left {
       font-size: 128px;
       font-size: 8rem;
@@ -405,7 +573,8 @@ header {
       opacity: 0.25; }
     .experience .selector-box .exp-right {
       padding: 0 15px 15px 15px;
-      padding-left: 15%; }
+      padding-left: 15%;
+      padding-left: 20%; }
       .experience .selector-box .exp-right i {
         transform: translate(5px, 4px);
         padding: 1px; }
@@ -423,6 +592,15 @@ header {
     background-color: #f7f7f7;
     display: flex;
     margin: 0; }
+    @media only screen and (max-width: 60em) {
+      .experience .summary-box {
+        width: 100%;
+        float: none; } }
+    @media only screen and (max-width: 40em) {
+      .experience .summary-box {
+        width: 100%;
+        float: none;
+        height: 530px; } }
   .experience .licensing, .experience .content, .experience .specialist, .experience .services {
     align-items: center;
     justify-content: center;
@@ -458,6 +636,12 @@ footer {
     content: "";
     display: table;
     clear: both; }
+  @media only screen and (max-width: 60em) {
+    footer {
+      margin-top: 400px; } }
+  @media only screen and (max-width: 40em) {
+    footer {
+      margin-top: 530px; } }
   footer span {
     float: right; }
   footer p {
@@ -483,6 +667,14 @@ footer {
   -moz-box-shadow: 1px 1px 1px 0 #666;
   box-shadow: 1px 1px 1px 0 #666;
   z-index: 1000; }
+  @media only screen and (max-width: 60em) {
+    .modal {
+      width: 400px;
+      left: calc(50% - 200px); } }
+  @media only screen and (max-width: 40em) {
+    .modal {
+      width: 400px;
+      left: calc(50% - 200px); } }
 
 .modal h3, .darken h3 {
   color: #f75d0f; }
@@ -496,5 +688,13 @@ footer {
   font-size: 1rem; }
   .modal li strong, .darken li strong {
     color: #333; }
+  @media only screen and (max-width: 60em) {
+    .modal li, .darken li {
+      font-size: 12px;
+      font-size: 0.75rem; } }
+  @media only screen and (max-width: 40em) {
+    .modal li, .darken li {
+      font-size: 12px;
+      font-size: 0.75rem; } }
 
 /*# sourceMappingURL=app.css.map */
